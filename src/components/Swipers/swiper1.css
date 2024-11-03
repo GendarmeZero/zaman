@@ -1,0 +1,23 @@
+#app { height: 100% }
+html,
+
+
+/* body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+
+.mainSwiper .swiper-slidee {
+  background-position: center;
+  background-size: cover;
+}
+
+.mainSwiper .swiper-slidee img {
+  display: block;
+  width: 280px;
+  height: 550px;
+}

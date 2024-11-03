@@ -1,0 +1,105 @@
+/* Full width Swiper container */
+.testimonial-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F5F7FA;
+}
+
+/* Swiper styling */
+.testimonial-swiper {
+    width: 90%;
+    height: auto;
+}
+
+.testimonial-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Image styling */
+.testimonial-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Text content styling */
+.testimonial-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial-details {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: cadetblue;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    display: block;
+}
+
+.testimonial-job {
+    color: #3f3e3e;
+    display: block;
+}
+
+/* Custom navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: rgb(116, 181, 201);
+    background-color: rgba(58, 58, 58, 0.8); 
+    padding: 25px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #69a8bd;
+    color: aliceblue;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px; 
+}
+
+/* Adjust pagination styles */
+.swiper-pagination {
+    padding-top: 10px; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(116, 181, 201);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #2b4045; 
+    opacity: 1;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 800px) {
+    .swiper-button-next, .swiper-button-prev {
+        position: absolute;
+        top: 20%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    .swiper-button-next {
+        right: 5%;
+    }
+    .swiper-button-prev {
+        left: 5%;
+    }
+}

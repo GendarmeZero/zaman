@@ -1,0 +1,117 @@
+.footer {
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  .footer > div {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+  }
+  .footer-section h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 22.3px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #242424;
+    margin-bottom: 20px;
+  }
+  .footer-section p {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    text-align: left;
+    color: #a2a2a2;
+    padding: 5px 0;
+  }
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 10rem;
+    background-color: #F5F8F9;
+  }
+  .subscribe-button {
+    padding: 5px;
+    width: 5rem;
+    background-color: #6C929E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subscribe-button:hover {
+    background-color: #60828d;
+  }
+  .footer-end {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+  }
+  .footer-end .social span {
+
+    display: flex;
+   justify-content: center;
+   flex-direction: row;
+    align-items: center;
+  }
+    .footer-end .social span p {
+      margin-right: 10px;
+    }
+  .footer-left {
+    color: #242424;
+  }
+  .footer-right {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+  }
+  .footer-right span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 5px;
+
+  }
+  .social-icon {
+    font-size: 20px;
+    color: #242424;
+  }
+  /* Responsive styles */
+  @media (max-width: 840px) {
+    .footer > div {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .footer-section:last-child {
+      margin-bottom: 0;
+    }
+    .footer-end {
+      flex-direction: column;
+    }
+    .footer-left {
+      margin-bottom: 10px;
+    }
+  }

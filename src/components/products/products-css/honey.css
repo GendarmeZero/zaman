@@ -1,0 +1,43 @@
+
+.honey-bg {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3c623;
+}
+
+
+.honeycomb {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    gap: 5px;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(-10deg);
+}
+
+
+.honeycomb-cell {
+    width: 50px;
+    height: 50px;
+    background-color: #f7b500;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.honeycomb-cell:hover {
+    background-color: #ffda59;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(255, 218, 89, 0.8);
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+

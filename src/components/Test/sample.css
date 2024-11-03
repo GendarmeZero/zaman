@@ -1,0 +1,65 @@
+
+.appp {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.wrapper {
+  padding-top: 10rem;
+}
+
+.wrapper .slide {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 226px;
+    width: 100%;
+
+  background-color: #eee;
+  border-radius: 16px;
+}
+
+.wrapper .swiper-container {
+  height: 268px;
+  width: 100%;
+}
+
+.wrapper .swiper-pagination {
+  bottom: 0;
+}
+
+.wrapper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border: 1px solid #68b8ff;
+  opacity: 1;
+}
+
+.wrapper .swiper-pagination-bullet-active {
+  width: 20px;
+  height: 6px;
+  transition: width 0.5s;
+  border-radius: 5px;
+  background: #68b8ff;
+  border: 1px solid transparent;
+}
+
+.wrapper .button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wrapper .button {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: #68b8ff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
