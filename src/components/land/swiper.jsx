@@ -1,9 +1,9 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ImgSwiper from '../../images/aboutt.png';
+import ImgSwiper from '../../images/about.jpg';
 import ImgSwiper1 from '../../images/h.jpg';
-import ImgSwiper2 from '../../images/Div.png';
-import ImgSwiper3 from '../../images/h1.jpg';
+import ImgSwiper2 from '../../images/h1.jpg';
+import ImgSwiper3 from '../../images/honey-jar02.jpg';
 
 import 'swiper/css';
 import 'swiper/css/effect-creative';

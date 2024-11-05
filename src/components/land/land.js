@@ -14,6 +14,7 @@ import Services from '../services/services'
 import Testttt from '../Test/testttt'
 
 import './land.css'
+import './landImgaes.css'
 
 
 

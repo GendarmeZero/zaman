@@ -90,8 +90,8 @@ body {
 
 .all-text h4 {
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-    color: #6C929E;
+    font-size: 20px;
+    color: #FFC30B;
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -128,13 +128,15 @@ body {
 }
 
 .btn_dr .btn2 {
-    background-color:#60808a;
-    color: white;
+    background-color: #ffc30b;
+    color: black;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px;
+    display: flex;
+    flex-direction: row;
 }
 .btn2 button:hover  {
     background-color: #11171a;
@@ -255,8 +257,8 @@ body {
 }
 
 .product .number {
-    background-color: #5c7e89;
-    color: #DDD;
+    background-color: #FFC30B;
+    color: black;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -282,12 +284,12 @@ body {
 }
 
 .product:hover .number {
-    box-shadow: 0 0 20px 700px #6C929E;
+    box-shadow: 0 0 20px 700px #FFC30B;
 }
 
 .product:hover h3,
 .product:hover p {
-    color: #DDD;
+    color: white;
 }
 
 /* Media queries for responsiveness */

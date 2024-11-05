@@ -3,16 +3,12 @@ import React from 'react';
 function SearchBar({ value, onChange }) {
     return (
         <input
+            className="search-bar"
             type="text"
             placeholder="Search by name..."
             value={value}
             onChange={(e) => onChange(e.target.value)}
-            style={{
-                padding: '8px',
-                marginBottom: '20px',
-                width: '100%',
-                boxSizing: 'border-box'
-            }}
+
         />
     );
 }
