@@ -6,7 +6,6 @@ import './land.css'
 
 //Images
 import './landImgaes.css'
-import Bee from '../../images/bee.png'
 
 const values = [
   { number: '01', title: 'Our Mission', description: 'We aim at understanding and caring for patients and colleagues\' needs and wants, by attentive listening and putting ourselves in people’s shoes.' },
@@ -35,7 +34,6 @@ export default function about() {
           <button type="button" className="btn2">
             {" "}
             Browse Products {" "}
-            <img className="bee-01" src={Bee} alt="Bee"/>
           </button>
 
         </div>

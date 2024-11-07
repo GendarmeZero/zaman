@@ -2,12 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './footer.css';
-import BeeFly from "../../images/bee-fly-longer.png";
 
 const Footer = () => {
   return (
       <footer className="footer">
-        <img className="beefly01" src={BeeFly} alt=""/>
 
         <div>
           <div className="footer-section">

@@ -1,0 +1,86 @@
+.honey-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.CatHeader {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.honey-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.sidebar input[type="checkbox"],
+.sidebar input[type="number"],
+.sidebar select {
+    margin-right: 8px;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+.honey-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.honey-label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
