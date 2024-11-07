@@ -1,40 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar';
-
-// images
-import image_honey_con from '../../images/honey-con01.jpg';
 import CatHeader from '../../images/honey-header.jpeg';
+import '../land/landImgaes.css';
+import '../products/products-css/honey.css';
 
-//CSS
-import '../land/landImgaes.css'
-import '../products/products-css/honey.css'
-
-// Image data
-const images = [
-    { src: image_honey_con, alt: "Mobile", label: "Black Honey" },
-    { src: image_honey_con, alt: "Tablet", label: "Orange Blossom Honey" },
-    { src: image_honey_con, alt: "Laptop", label: "Lavender Honey" },
-    { src: image_honey_con, alt: "Desktop", label: "Manuka Honey" },
-    { src: image_honey_con, alt: "Monitor", label: "Clover Honey" },
-    { src: image_honey_con, alt: "Device", label: "Wildflower Honey" },
-    { src: image_honey_con, alt: "Smartphone", label: "Buckwheat Honey" },
-    { src: image_honey_con, alt: "Screen", label: "Eucalyptus Honey" },
-    { src: image_honey_con, alt: "Phone", label: "Sage Honey" },
-    { src: image_honey_con, alt: "Camera", label: "Acacia Honey" },
-    { src: image_honey_con, alt: "Headset", label: "Tupelo Honey" },
-    { src: image_honey_con, alt: "Keyboard", label: "Blueberry Honey" },
-    { src: image_honey_con, alt: "Mouse", label: "Fireweed Honey" },
-    { src: image_honey_con, alt: "Printer", label: "Raspberry Honey" },
-    { src: image_honey_con, alt: "Speaker", label: "Borage Honey" },
-    { src: image_honey_con, alt: "Laptop", label: "Dandelion Honey" },
-    { src: image_honey_con, alt: "Gadget", label: "Sunflower Honey" },
-    { src: image_honey_con, alt: "Tablet", label: "Heather Honey" },
-    { src: image_honey_con, alt: "Projector", label: "Sourwood Honey" },
-    { src: image_honey_con, alt: "Drone", label: "Pine Honey" }
-];
-
-function Honey() {
+function Honey({ products }) {
     const [searchQuery, setSearchQuery] = useState('');
     const navigate = useNavigate();
 
@@ -42,8 +13,9 @@ function Honey() {
         navigate('/categories');
     };
 
-    const filteredImages = images.filter((image) =>
-        image.label.toLowerCase().includes(searchQuery.toLowerCase())
+    // Apply search query filter on top of other filters
+    const filteredProducts = products.filter((product) =>
+        product.label.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
     return (
@@ -55,14 +27,13 @@ function Honey() {
 
             <main className="app-main-content">
                 <div className="images-grid">
-                    {filteredImages.map((image, index) => (
+                    {filteredProducts.map((product, index) => (
                         <div key={index} onClick={handleImageClick} style={{cursor: 'pointer'}}>
-                            <img src={image.src} alt={image.alt}/>
-                            <p>{image.label}</p>
+                            <img src={product.src} alt={product.label}/>
+                            <p>{product.label} - ${product.price}</p>
                         </div>
                     ))}
                 </div>
-
             </main>
         </section>
     );

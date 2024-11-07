@@ -587,15 +587,21 @@ body {
 }
 
 .overlayes h3 {
-  margin: 0;
-  font-size: 2.5rem; 
-  color: white;
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:
+            0 0 5px rgba(255, 255, 255, 0.8),   /* Small white glow */
+            0 0 10px rgba(255, 215, 0, 0.8),    /* Golden glow */
+            0 0 15px rgba(255, 165, 0, 0.7),    /* Orange glow */
+            0 0 20px rgba(255, 69, 0, 0.6);     /* Red glow for depth */
 }
+
 
 .overlayes button {
   margin-top: 1rem;
   font-size: 1rem; 
-  background-color: #6C929E;
+  background-color: #ffc30b;
   cursor: pointer;
   padding: 16px 32px; 
   border-radius: 35px;

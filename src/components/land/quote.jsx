@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagesakf from '../../images/Div.png';
+import Imagesakf from '../../images/qoute-header.jpg';
 import './land.css'; 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div className="overlayes">
           <h3>Bexar give the smart solution</h3>
           <h3>for your business</h3>
-          <button>Get a quote</button>
+          <button>Read more</button>
         </div>
       </div>
     </div>

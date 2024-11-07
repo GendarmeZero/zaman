@@ -84,3 +84,10 @@
     font-weight: bold;
     color: #333;
 }
+.bt-filter{
+    background-color: #ffc30b;
+}
+
+.product-container{
+    width: 20%;
+}
